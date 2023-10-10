@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0396eb9f-397e-4963-9b05-3ee85cd377da" name="Changes" comment="" />
+    <list default="true" id="0396eb9f-397e-4963-9b05-3ee85cd377da" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homepage/Btn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homepage/Btn.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homepage/Facilities.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homepage/Facilities.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homepage/Gallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homepage/Gallery.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homepage/MatchCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homepage/MatchCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Section.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +67,7 @@
       <workItem from="1696237943829" duration="289000" />
       <workItem from="1696238277961" duration="19503000" />
       <workItem from="1696421626833" duration="16825000" />
-      <workItem from="1696848208257" duration="23441000" />
+      <workItem from="1696848208257" duration="24264000" />
     </task>
     <servers />
   </component>

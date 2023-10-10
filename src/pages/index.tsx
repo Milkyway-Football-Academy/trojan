@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import {PageWrapper} from "@/components/layout/PageWrapper";
 import {ClubPattern} from "@/components/homepage/ClubPattern";
 import {HomePageShowcase} from "@/components/homepage/Showcase";
@@ -8,10 +7,7 @@ import {FacilityEntry, HomepageProps, MatchesEntry, NewsEntry} from "@/types";
 import {HomepageMatches} from "@/components/homepage/MatchCard";
 import {HomepageNews} from "@/components/homepage/NewsCard";
 import {GetStaticProps} from "next";
-import {HomepageGallery} from "@/components/homepage/Gallery";
-import {HomepageFacilities} from "@/components/homepage/Facilities";
 import {HeadCoachSection} from "@/components/homepage/HeadCoachSection";
-import {PartnersSection} from "@/components/homepage/Partners";
 import {SectionCards} from "@/components/homepage/Cards";
 import {SocialSection} from "@/components/homepage/SocialSection";
 

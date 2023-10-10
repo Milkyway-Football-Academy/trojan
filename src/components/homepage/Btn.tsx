@@ -42,7 +42,7 @@ export const LearnMoreBtn: React.FC<LearnMoreBtnProps> = (props) => {
 }
 
 
-export const IconButton: React.FC<{href: string}> = ({children, href}) => {
+export const IconButton: React.FC<{href: string, children?: React.ReactNode}> = ({children, href}) => {
     return (
         <a target="_blank" href={href} className="cursor-pointer">
             {children}

@@ -11,7 +11,7 @@ import SwiperCore from "swiper";
 SwiperCore.use([A11y, Autoplay]);
 
 export const MatchCard: React.FC<MatchesEntry>  =  (props) => {
-    const mo = new moment(props.timeAndDate)
+    const mo =  moment(props.timeAndDate)
     const date = mo.format('Do MMM YYYY')
     const time = mo.format('LT')
 

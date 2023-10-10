@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://milkywayfootballacademy.com
+
+# Sitemaps
+Sitemap: https://milkywayfootballacademy.com/sitemap.xml

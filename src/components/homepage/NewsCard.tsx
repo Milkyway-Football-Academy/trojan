@@ -45,7 +45,7 @@ SwiperCore.use([A11y, EffectCoverflow, Autoplay]);
 // };
 
 export const HomepageNewsCard:React.FC<NewsEntry> = ({newsHeading, datePosted, id}) => {
-        const date = new moment(datePosted).format('LT Do MMM')
+        const date =  moment(datePosted).format('LT Do MMM')
     return (
         <div className="uppercase bg-white rounded-lg w-full p-5 shadow-lg ">
             <div className="flex flex-col w-full space-y-5">
@@ -88,7 +88,7 @@ export const HomepageNewSlider: React.FC<{ data: NewsEntry[] }> = (props) => {
     );
 };
 export const HomepageNewsCardItem: React.FC<any> = ({ newsHeading, cover, datePosted, index }) => {
-    const date = new moment(datePosted).format(('Do MMM LT'));
+    const date = moment(datePosted).format(('Do MMM LT'));
 
     const backgroundImageStyle = {
         backgroundImage: `url(${ContentfulToUrl(cover)})`,

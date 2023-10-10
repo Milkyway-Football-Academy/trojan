@@ -33,6 +33,7 @@ export const FacilityItem: React.FC<{image: string, title: string}> = ({image, t
                     </h3>
                 </div>
                 <Image
+                    alt="Milkyway Football Academy"
                     src={image}
                     layout="fill"
                     className="absolute top-0 left-0 w-full h-full cover rounded-[10px]"

@@ -30,6 +30,7 @@ export const GalleryItem: React.FC<{image: StaticImageData | string, title: stri
                                 </h3>
                             </div>
                             <Image
+                                alt="Milkyway Football Academy"
                                 src={image}
                                 className="absolute top-0 left-0 w-full h-full cover"
                             />

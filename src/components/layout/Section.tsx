@@ -13,10 +13,11 @@ interface HomePageSectionProps {
     subtitle?: string
 
     titleClass?: string
+
+    children?: React.ReactNode
 }
 export const HomePageSection: React.FC<HomePageSectionProps> = ({subtitle, titleClass, heading, sectionBackground, hasBtn, btnHref, children}) => {
     const ref = useRef<HTMLDivElement | null>(null)
-    // useScrollAnimation(ref);
     return (
         <section ref={ref} className={sectionBackground ?? ''}>
            <div className="py-20">
