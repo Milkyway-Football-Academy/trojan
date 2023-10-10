@@ -10,7 +10,10 @@
       <change beforePath="$PROJECT_DIR$/src/components/homepage/Facilities.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homepage/Facilities.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/homepage/Gallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homepage/Gallery.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/homepage/MatchCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homepage/MatchCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homepage/NewsCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homepage/NewsCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/Section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Section.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ContentfulClient.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ContentfulClient.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +70,7 @@
       <workItem from="1696237943829" duration="289000" />
       <workItem from="1696238277961" duration="19503000" />
       <workItem from="1696421626833" duration="16825000" />
-      <workItem from="1696848208257" duration="24264000" />
+      <workItem from="1696848208257" duration="24581000" />
     </task>
     <servers />
   </component>
