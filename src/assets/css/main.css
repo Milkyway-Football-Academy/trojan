@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+div.club--pattern {
+    background-image: url("../../assets/PNG/Pattern-Horizontal.png");
+}
+
+
+.news--gridItem:nth-of-type(5n + 1) {
+    grid-column: span 2 !important;
+    grid-row: span 2 !important;
+    aspect-ratio: 1.49 !important;
+}
+
+.news--gridItem:nth-of-type(5n + 3) {
+    grid-row: span 2;
+}
+
+.news--gridItem:nth-of-type(5n + 4) {
+    grid-row: span 1;
+}
+
+.grid-parent {
+    grid-gap: 12px;
+    display: grid;
+    grid-auto-rows: 278px;
+    grid-template-areas:
+        "o th th th f f"
+        "t th th th fi fi";
+
+}
+
+@media screen and (max-width: 620px) {
+    .grid-parent {
+        grid-template-areas:
+"o"
+"t"
+"th"
+"f"
+"fi";
+        grid-auto-rows: auto; /* Adjust row height as needed */
+    }
+}
+
+.grid-item-1 {
+    grid-area: o;
+}
+
+.grid-item-2 {
+    grid-area: t;
+}
+
+.grid-item-3 {
+    grid-area: th;
+}
+
+.grid-item-4 {
+    grid-area: f;
+}
+
+.grid-item-5 {
+    grid-area: fi;
+}
+
+
+@media (min-width: 1024px) {
+    .news--gridItem:nth-of-type(5n + 1) {
+        grid-row: span 1 !important;
+        aspect-ratio: 3.82 !important;
+    }
+}
+
+.fade-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%; /* Adjust the height of the fading area as needed */
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.5) 100%); /* Adjust the background color and opacity as needed */
+    z-index: 99;
+}
+

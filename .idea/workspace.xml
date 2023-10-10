@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0396eb9f-397e-4963-9b05-3ee85cd377da" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/custom.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Pattern-Horizontal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/Pattern-Vertical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/GratelosDisplay.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/head-coach.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/section-card-f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/section-card-p.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/section-card-pl.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/JPG/3d wall.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/JPG/Fans.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/JPG/ball.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/JPG/player1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/JPG/player2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/JPG/player3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/PNG/Pattern-Horizontal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/PNG/Pattern-Vertical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/css/transition.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/GratelosDisplay.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Xolonium-Bold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Xolonium-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Xolonium-Regular.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Xolonium-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/ig-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/tiktok-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/youtube-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/media/video1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/media/video2.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/media/video3.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/homepage/AnimatedTitle.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/homepage/Btn.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/homepage/Cards.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/homepage/ClubPattern.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/homepage/Facilities.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/homepage/Gallery.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/homepage/HeadCoachSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/homepage/HomepageTitle.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/homepage/MatchCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/homepage/NewsCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/homepage/Showcase.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/homepage/SocialSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/Section.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useAnimation.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useScroll.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ContentfulClient.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/contenful.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/page-props.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/contentfulToUrl.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2W7AhMnPiAIjx1f93TSCAkAwgPT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/surajauwal/projects/thc/milkyway/src/assets/icons",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Users/surajauwal/projects/thc/milkyway/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/icons" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/src/assets/media" />
+      <recent name="$PROJECT_DIR$/public/fonts" />
+      <recent name="$PROJECT_DIR$/src/assets/fonts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/src/assets" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/components/layout" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0396eb9f-397e-4963-9b05-3ee85cd377da" name="Changes" comment="" />
+      <created>1696073364506</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696073364506</updated>
+      <workItem from="1696073366225" duration="5358000" />
+      <workItem from="1696237943829" duration="289000" />
+      <workItem from="1696238277961" duration="19503000" />
+      <workItem from="1696421626833" duration="16825000" />
+      <workItem from="1696848208257" duration="22953000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/tailwindcss/types/config.d.ts</url>
+          <line>33</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
