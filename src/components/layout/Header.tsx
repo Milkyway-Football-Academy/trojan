@@ -6,6 +6,8 @@ import useScrollPosition from "@/hooks/useScroll";
 import classnames from "classnames";
 import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
 import {gsap} from "gsap";
+import {useParams} from "next/navigation";
+import {useRouter} from "next/router";
 
 
 export const Header: React.FC<{}> = () => {
@@ -14,13 +16,17 @@ export const Header: React.FC<{}> = () => {
     const { yPosition } = useScrollPosition();
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-    const inScroll = yPosition < Number(headerRef?.current?.offsetHeight) + 150;
+    const {pathname} = useRouter()
+
+    const isHome = pathname === '/'
+
+    const inScroll = yPosition < Number(headerRef?.current?.offsetHeight) ;
 
     const headerClasses = classnames(
         "fixed z-50 top-0 left-0 w-full transition-all ease-in duration-700 text-3xl font-bold",
         {
-            "bg-transparent": inScroll,
-            "bg-app-primary": !inScroll,
+            "bg-transparent": inScroll && isHome,
+            "bg-app-accent": !inScroll || !isHome,
         }
     );
 
@@ -29,7 +35,7 @@ export const Header: React.FC<{}> = () => {
     );
 
     const mobileMenuClasses = classnames(
-        "fixed top-0 mobile-menu-overlay z-[999] left-0 h-full w-full bg-black bg-opacity-80 transform transition-transform ease-in duration-500",
+        "fixed top-0 mobile-menu-overlay z-[999] left-0 h-full w-full bg-app-accent transform transition-transform ease-in duration-500",
         {
             "translate-x-0": isMobileMenuOpen,
             "-translate-x-full": !isMobileMenuOpen,
@@ -85,7 +91,7 @@ export const Header: React.FC<{}> = () => {
                                     <NavLink href="/programs" label="Programs" />
                                 </li>
                                 <li>
-                                    <NavLink href="/informatin" label="Academy Info" />
+                                    <NavLink href="/information" label="Academy Info" />
                                 </li>
                                 <li>
                                     <NavLink href="/matches" label="Matches" />
@@ -106,7 +112,18 @@ export const Header: React.FC<{}> = () => {
             </header>
             {isMobileMenuOpen && (
                 <div className={mobileMenuClasses} ref={mobileRef}>
-                    <div className="container h-full flex flex-col py-16 text-center space-y-4">
+                    <div className="container h-full flex flex-col py-16 px-10 space-y-4">
+                        <div className="flex mb-10 -py-10 flex-row justify-center w-full">
+                            <Link href="/">
+                                <Image
+                                    className={logoClasses}
+                                    width={75}
+                                    height={75}
+                                    src={LOGO}
+                                    alt="Milkyway football academy"
+                                />
+                            </Link>
+                        </div>
                         <button
                             className="absolute top-5 right-5"
                             onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
@@ -119,7 +136,7 @@ export const Header: React.FC<{}> = () => {
                         <MobileNavLink href="/coaches" label="Coaches" />
                         <MobileNavLink href="/news" label="News" />
                         <MobileNavLink href="/programs" label="Programs" />
-                        <MobileNavLink href="/informatin" label="Academy Info" />
+                        <MobileNavLink href="/information" label="Academy Info" />
                         <MobileNavLink href="/matches" label="Matches" />
                     </div>
                 </div>
@@ -142,7 +159,7 @@ const NavLink: React.FC<{ href: string; isExternal?: boolean; label: string }> =
 
 const MobileNavLink: React.FC<{ href: string; label: string }> = ({ href, label }) => {
     return (
-        <div className="font-bold uppercase text-3xl font-light text-white hover:text-app-secondary hover:opacity-30">
+        <div className="font-bold uppercase text-5xl font-light text-white hover:text-app-secondary hover:opacity-30">
             <Link href={href}>{label}</Link>
         </div>
     );

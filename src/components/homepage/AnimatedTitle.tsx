@@ -4,13 +4,11 @@ import classNames from 'classnames';
 
 interface TitleProps {
     title: string;
-    titleClassName?: string;
     className?: string;
 }
 
 export const AnimatedTitle: React.FC<TitleProps> = ({
                                          title,
-                                         titleClassName = '',
                                          className = '',
                                      }) => {
     const titleRef = useRef<HTMLHeadingElement>(null);
@@ -18,7 +16,7 @@ export const AnimatedTitle: React.FC<TitleProps> = ({
     useEffect(() => {
         if (titleRef.current) {
             const containerWidth =
-                document.querySelector('body')?.clientWidth || 0;
+                document.querySelector('cont')?.clientWidth || 0;
 
             gsap.to(titleRef.current, {
                 x: containerWidth - titleRef.current.clientWidth,
@@ -31,8 +29,8 @@ export const AnimatedTitle: React.FC<TitleProps> = ({
         }
     }, []);
     return (
-        <div className="flex">
-            <h1 ref={titleRef} className={classNames(className, titleClassName)}>
+        <div className="flex w-full overflow-hidden">
+            <h1 ref={titleRef} className={classNames(className, 'whitespace-nowrap')}>
                 {title}
             </h1>
         </div>

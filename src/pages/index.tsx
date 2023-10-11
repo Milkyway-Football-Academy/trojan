@@ -10,6 +10,8 @@ import {GetStaticProps} from "next";
 import {HeadCoachSection} from "@/components/homepage/HeadCoachSection";
 import {SectionCards} from "@/components/homepage/Cards";
 import {SocialSection} from "@/components/homepage/SocialSection";
+import {useEffect, useState} from "react";
+import {Loader} from "@/components/layout/Loader";
 
 const sampleContent = {
     partners: {
@@ -34,7 +36,8 @@ const sampleContent = {
 
 
  const Home: React.FC<HomepageProps> = ({matches, news, facilities}) => {
-  return (
+
+     return (
    <PageWrapper defaultTitle="Home" >
        <HomePageShowcase data={news} />
        <HomepageTitle />

@@ -1,11 +1,12 @@
 'use client';
 import {Header} from '@/components/layout/Header';
 import {Footer} from '@/components/layout/Footer';
-import React, { FC, PropsWithChildren } from 'react';
+import React, {FC, PropsWithChildren, useEffect, useState} from 'react';
 import { PageProps } from '@/types';
 import Head from 'next/head';
 import { usePathname } from 'next/navigation';
 import localFont from "next/font/local";
+import {Loader} from "@/components/layout/Loader";
 
 const font = localFont({
     src:[{
@@ -30,6 +31,14 @@ export const PageWrapper: FC<PropsWithChildren<PageProps>> = ({
 
     const image = '/thumbnail.jpg';
     const domain = 'https://milkywayfootballacademy.com';
+
+
+    const [showLoader, setShowloader] = useState(true)
+
+    useEffect(() => {
+        setTimeout(() => setShowloader(false) , 2000)
+    }, [])
+
     return (
         <div className={"overflow-hidden" + ' ' + font.className}>
             <Head>
@@ -66,9 +75,13 @@ export const PageWrapper: FC<PropsWithChildren<PageProps>> = ({
                     href="/blue.png"
                 />
             </Head>
-            <Header />
-              <main className="flex flex-col min-h-screen bg-gray-100">{children}</main>
-            <Footer />
+            {showLoader ? <Loader /> : (
+               <>
+                   <Header />
+                   <main className="flex flex-col min-h-screen bg-gray-100">{children}</main>
+                   <Footer />
+               </>
+            )}
         </div>
     );
 };
