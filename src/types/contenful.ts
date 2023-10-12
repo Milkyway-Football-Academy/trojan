@@ -42,3 +42,22 @@ export interface Media {
     sys: Record<string, any>;
     fields: Record<string, any>;
 };
+
+
+export interface PlayerEntry {
+    playerName: string;
+    dob: number;
+    state: string;
+    id: number;
+    postion: string;
+
+    slug: string
+    biography?: string;
+    number: number; // Assuming "number" is of type "Integer" in the JSON
+    playerPhotos: Media[]; // Assuming "playerPhotos" is an array of strings
+}
+
+export interface ProgramEntry {
+    name: string
+    information: string
+}

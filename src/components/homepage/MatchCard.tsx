@@ -7,6 +7,8 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import {SwiperOptions} from "swiper/types";
 import {A11y, Autoplay} from "swiper/modules";
 import SwiperCore from "swiper";
+import {KiteIcon} from "@/components/homepage/Icon";
+import {getFirstLetters} from "../../../utils/getIntials";
 
 SwiperCore.use([A11y, Autoplay]);
 
@@ -17,9 +19,8 @@ export const MatchCard: React.FC<MatchesEntry>  =  (props) => {
 
     console.log(props.results)
     return (
-        <div className="rounded-lg bg-white border border-[0.2px] border-app-primary h-[200px]">
-           <div>
-               <div className={classnames("flex flex-row justify-between w-full items-center p-3 rounded-t-lg", {
+        <div className="rounded-lg bg-white border border-[0.2px] border-app-primary h-[400px]">
+               <div className={classnames("relative flex flex-row justify-between w-full items-center p-3 rounded-t-lg", {
                    'bg-gray-300 text-app-primary': props.location.toLocaleUpperCase() === 'HOME',
                    'bg-app-secondary text-black': props.location.toLocaleUpperCase() === 'AWAY'
                })}>
@@ -29,8 +30,8 @@ export const MatchCard: React.FC<MatchesEntry>  =  (props) => {
                     </div>
                    <div className="text-lg">{props.location.toLocaleUpperCase()}</div>
                </div>
-               <div className="p-3 flex flex-col w-full items-center text-3xl">
-                   <div className="flex flex-col space-y-5">
+               <div className="p-3 flex flex-col w-full h-full items-center text-3xl">
+                   <div className="space-y-5 ">
                        {props?.results?.home !== undefined && (
                            <div className="flex flex-row items-center uppercase">
                                <div className="mr-4 text-gray-500">
@@ -57,11 +58,14 @@ export const MatchCard: React.FC<MatchesEntry>  =  (props) => {
                        {!props?.results?.opponents && (
                            <div>
                                <div className="text-center">{props.opponents}</div>
+                               <KiteIcon initials={getFirstLetters(props.opponents)} />
                            </div>
                        )}
                    </div>
+                   <button className="absolute bottom-16 hover:bg-yellow-500 border-gray-500 border-[1px] rounded-full min-w-[200px] py-3 px-6 text-black text-xl">
+                       {props.results?.home !== undefined ? 'View Highlights' : 'Get Ticket'}
+                   </button>
                </div>
-           </div>
         </div>
     )
 }

@@ -7,6 +7,7 @@ import Head from 'next/head';
 import { usePathname } from 'next/navigation';
 import localFont from "next/font/local";
 import {Loader} from "@/components/layout/Loader";
+import {ClubPattern} from "@/components/homepage/ClubPattern";
 
 const font = localFont({
     src:[{
@@ -18,7 +19,8 @@ const font = localFont({
 export const PageWrapper: FC<PropsWithChildren<PageProps>> = ({
                                                                   children,
                                                                   defaultTitle,
-                                                                  siteDescription
+                                                                  siteDescription,
+                                                                    pageKeyword
 
                                                               }) => {
 
@@ -60,6 +62,7 @@ export const PageWrapper: FC<PropsWithChildren<PageProps>> = ({
                     property="twitter:title"
                     content={`${title} - Milkyway Football Academy`}
                 />
+                <meta property="keywords" content={pageKeyword}/>
                 <meta property="twitter:description" content={description} />
                 <meta property="twitter:image" content={image} />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -78,7 +81,8 @@ export const PageWrapper: FC<PropsWithChildren<PageProps>> = ({
             {showLoader ? <Loader /> : (
                <>
                    <Header />
-                   <main className="flex flex-col min-h-screen bg-gray-100">{children}</main>
+                   <main className="flex antialiased flex-col min-h-screen bg-gray-100">{children}</main>
+                   <ClubPattern />
                    <Footer />
                </>
             )}

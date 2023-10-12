@@ -26,7 +26,7 @@ export const Header: React.FC<{}> = () => {
         "fixed z-50 top-0 left-0 w-full transition-all ease-in duration-700 text-3xl font-bold",
         {
             "bg-transparent": inScroll && isHome,
-            "bg-app-accent": !inScroll || !isHome,
+            "bg-app-primary": !inScroll || !isHome,
         }
     );
 
@@ -88,7 +88,7 @@ export const Header: React.FC<{}> = () => {
                                     <NavLink href="/news" label="News" />
                                 </li>
                                 <li>
-                                    <NavLink href="/programs" label="Programs" />
+                                    <NavLink href="/information/programs" label="Programs" />
                                 </li>
                                 <li>
                                     <NavLink href="/information" label="Academy Info" />
@@ -135,7 +135,7 @@ export const Header: React.FC<{}> = () => {
                         <MobileNavLink href="/players" label="Players" />
                         <MobileNavLink href="/coaches" label="Coaches" />
                         <MobileNavLink href="/news" label="News" />
-                        <MobileNavLink href="/programs" label="Programs" />
+                        <MobileNavLink href="/information/programs" label="Programs" />
                         <MobileNavLink href="/information" label="Academy Info" />
                         <MobileNavLink href="/matches" label="Matches" />
                     </div>

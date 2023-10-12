@@ -16,6 +16,17 @@ export class ContentfulClient {
         return entries.items.length ? entries.items.map((ent) => ent.fields) as T[] : [] as T[]
     }
 
+    async getEntryBySlug<T> (entryId: string, slug: string): Promise<T> {
+        const entries = await this.client.getEntries({content_type: entryId, 'fields.slug': slug, limit: 1});
+        return entries.items[0].fields as T
+    }
+
+    async getEntry<T>(entryId: string, query?: Record<string, string>): Promise<T> {
+        return (await this.client.getEntry(entryId, query)).fields as T
+    }
+
+
+
     async getAssets<T>(assetId: string): Promise<T> {
         const asset = await this.client.getAsset(assetId);
         return asset.fields as T;

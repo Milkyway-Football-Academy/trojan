@@ -1,5 +1,4 @@
 import {PageWrapper} from "@/components/layout/PageWrapper";
-import {ClubPattern} from "@/components/homepage/ClubPattern";
 import {HomePageShowcase} from "@/components/homepage/Showcase";
 import {HomepageTitle} from "@/components/homepage/HomepageTitle";
 import {ContentfulClient} from "@/lib/ContentfulClient";
@@ -10,8 +9,6 @@ import {GetStaticProps} from "next";
 import {HeadCoachSection} from "@/components/homepage/HeadCoachSection";
 import {SectionCards} from "@/components/homepage/Cards";
 import {SocialSection} from "@/components/homepage/SocialSection";
-import {useEffect, useState} from "react";
-import {Loader} from "@/components/layout/Loader";
 
 const sampleContent = {
     partners: {
@@ -48,7 +45,6 @@ const sampleContent = {
        <SectionCards {...sampleContent['partners']} type='partners' />
        <SocialSection />
        <SectionCards {...sampleContent['facilities']} type='facilities' />
-       <ClubPattern />
    </PageWrapper>
   )
 }

@@ -37,7 +37,6 @@ export const SectionCards: React.FC<SectionCardsProps> = ({
                                                               type,
                                                               title,
                                                           }) => {
-
     return (
         <div className="relative min-h-[400px]">
             <div className="container py-16 text-white">
