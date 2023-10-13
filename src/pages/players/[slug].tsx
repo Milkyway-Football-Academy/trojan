@@ -97,7 +97,6 @@ export const getStaticProps: GetStaticProps<PlayerPageProps> = async (
     const player = await client.getEntryBySlug<PlayerEntry>('players', ctx?.params?.slug as string ?? '')
     const players = (await client.getEntries<PlayerEntry>('players')).filter(p => player.postion === p.postion && p.slug !== player.slug).slice(0, 4)
 
-    console.log({players})
     return {
         props: {
            player,

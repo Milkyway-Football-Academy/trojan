@@ -82,9 +82,6 @@ export const Header: React.FC<{}> = () => {
                                     <NavLink href="/players" label="Players" />
                                 </li>
                                 <li>
-                                    <NavLink href="/coaches" label="Coaches" />
-                                </li>
-                                <li>
                                     <NavLink href="/news" label="News" />
                                 </li>
                                 <li>
@@ -133,7 +130,6 @@ export const Header: React.FC<{}> = () => {
                             />
                         </button>
                         <MobileNavLink href="/players" label="Players" />
-                        <MobileNavLink href="/coaches" label="Coaches" />
                         <MobileNavLink href="/news" label="News" />
                         <MobileNavLink href="/information/programs" label="Programs" />
                         <MobileNavLink href="/information" label="Academy Info" />

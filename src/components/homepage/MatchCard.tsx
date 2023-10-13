@@ -5,12 +5,12 @@ import moment from 'moment'
 import React from 'react';
 import {Swiper, SwiperSlide} from "swiper/react";
 import {SwiperOptions} from "swiper/types";
-import {A11y, Autoplay} from "swiper/modules";
+import {A11y, Autoplay, Pagination} from "swiper/modules";
 import SwiperCore from "swiper";
 import {KiteIcon} from "@/components/homepage/Icon";
 import {getFirstLetters} from "../../../utils/getIntials";
 
-SwiperCore.use([A11y, Autoplay]);
+SwiperCore.use([A11y, Autoplay, Pagination]);
 
 export const MatchCard: React.FC<MatchesEntry>  =  (props) => {
     const mo =  moment(props.timeAndDate)
@@ -72,11 +72,17 @@ export const MatchCard: React.FC<MatchesEntry>  =  (props) => {
 
 export const HomepageMatches: React.FC<{matches: MatchesEntry[]}> = ({matches}) => {
     const sliderOptions: SwiperOptions = {
-        modules: [A11y, Autoplay],
+        modules: [A11y, Autoplay, Pagination],
         slidesPerView: 1.2,
         spaceBetween: 10,
+        watchOverflow: true,
+        watchSlidesProgress: true,
+        centeredSlides: true,
 
         loop: true,
+        pagination:{
+        el: `.homePortfolio--galleryPagination`,
+    },
         autoplay:{
             delay: 1000,
             disableOnInteraction: false
@@ -97,7 +103,7 @@ export const HomepageMatches: React.FC<{matches: MatchesEntry[]}> = ({matches}) 
     };
     return (
         <HomePageSection heading="Matches">
-            <Swiper  {...sliderOptions}>
+            <Swiper  {...sliderOptions} >
                 {matches.map((match, index) => (
                     <SwiperSlide key={index}>
                         <MatchCard opponents={match.opponents} location={match.location} id={match.id} timeAndDate={match.timeAndDate} upcoming={match.upcoming} results={match.results} />

@@ -61,3 +61,29 @@ export interface ProgramEntry {
     name: string
     information: string
 }
+
+
+export type Department =
+    "coaching" |
+    "engineering" |
+    "management" |
+    "public relations" |
+    "recruiting"
+
+
+export interface StaffEntry {
+    name: string
+    biography: string
+    image: Media
+    email?: string
+    phone?: string
+
+    title: string
+
+    department: Department
+
+    slug: string
+}
+
+
+

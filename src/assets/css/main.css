@@ -100,3 +100,22 @@ div.club--pattern {
     opacity: 0;
     transition: opacity 0.5s ease;
 }
+
+
+.homePortfolio--galleryPagination {
+    @apply flex items-center justify-center gap-1.5;
+}
+
+.homePortfolio--galleryPagination .swiper-pagination-bullet {
+    @apply w-6 h-[3px] rounded-[3px] mx-0 opacity-40 transition-all duration-300 lg:h-1;
+}
+
+.homePortfolio--galleryPagination .swiper-pagination-bullet-active {
+    @apply w-20 bg-white opacity-100;
+}
+
+
+html {
+    scroll-behavior: smooth !important;
+
+}

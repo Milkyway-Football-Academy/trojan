@@ -17,9 +17,9 @@ const InformationPage = () => {
                 />
                 <div className="grid grid-cols-2">
                     <InfoCards
-                        href="/information/coaches"
-                        title="Meet Our Coaches"
-                        subtext="Our experienced coaching staff is dedicated to helping you succeed in the game."
+                        href="/people"
+                        title="Meet The People"
+                        subtext="Our experienced staffs is dedicated to helping you succeed in the game."
                         type="coaches"
                     />
                     <InfoCards

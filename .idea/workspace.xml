@@ -5,23 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0396eb9f-397e-4963-9b05-3ee85cd377da" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/information/Cards.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/Loader.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/players/PlayerCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/information.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/players/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/people/PeopleCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/people/[slug].tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/people/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homepage/AnimatedTitle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homepage/AnimatedTitle.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homepage/ClubPattern.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homepage/ClubPattern.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homepage/MatchCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homepage/MatchCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/PageWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/PageWrapper.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/information/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/information/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/players/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/players/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/contenful.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/contenful.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/page-props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/page-props.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Suraj Auwal &lt;surajtauwal@gmail.com&gt;" />
+      </list>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -75,12 +82,25 @@
       <workItem from="1696421626833" duration="16825000" />
       <workItem from="1696848208257" duration="27773000" />
       <workItem from="1697010836060" duration="17000" />
-      <workItem from="1697010875062" duration="9409000" />
+      <workItem from="1697010875062" duration="35911000" />
     </task>
+    <task id="LOCAL-00001" summary="players + information">
+      <created>1697152849091</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697152849091</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="players + information" />
+    <option name="LAST_COMMIT_MESSAGE" value="players + information" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
