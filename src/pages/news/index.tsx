@@ -9,7 +9,7 @@ import React from "react";
 const NewsPage: React.FC<NewsPageProps> = ({news}) => {
     return (
         <PageWrapper defaultTitle="News">
-            <section className="bg-gray-100 h-full w-full mt-[80px]">
+            <section className="bg-gray-100 h-full w-full mt-[50px] md:mt-[80px]">
                 <HomePageSection heading="Highlights" sectionBackground="bg-app-accent">
                     <div className="news_grid">
                         {news.slice(0,4).map((n, index) => (
