@@ -72,3 +72,12 @@ export interface SingleStaffPageProps {
     staff: StaffEntry
 }
 
+
+export interface NewsPageProps {
+    news: NewsEntry[]
+}
+
+export interface SingleNewsPageProps {
+    news: NewsEntry
+    allNews: NewsEntry[]
+}

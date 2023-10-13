@@ -31,6 +31,69 @@ div.club--pattern {
 
 }
 
+/* Default grid layout */
+.news-grid-1 {
+    grid-area: tl;
+}
+
+.news-grid-2 {
+    grid-area: tr;
+}
+
+.news-grid-3 {
+    grid-area: bc;
+}
+
+.news-grid-4 {
+    grid-area: br;
+}
+
+.news_grid {
+    grid-gap: 16px !important;
+    display: grid;
+    grid-auto-rows: 360px !important;
+    grid-template-areas:
+    "tl tl tr tr"
+    "tl tl bc br" ;
+}
+
+/* Media queries for responsiveness */
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .news_grid {
+        grid-template-areas:
+      "tl tr"
+      "bc br";
+    }
+}
+
+/*@media screen and (max-width: 640px) {*/
+/*    .news_grid{*/
+/*        grid-gap: 16px !important;*/
+/*        display: grid;*/
+/*        grid-auto-rows: auto !important;*/
+/*        grid-template-areas:*/
+/*        "br bl"*/
+/*        "tl tr";*/
+/*    }*/
+
+/*    .news-grid-1 {*/
+/*        grid-area: tr;*/
+/*    }*/
+
+/*    .news-grid-2 {*/
+/*        grid-area: tl;*/
+/*    }*/
+/*    .news-grid-3 {*/
+/*        grid-area: bl;*/
+/*    }*/
+
+/*    .news-grid-4 {*/
+/*        grid-area: br;*/
+/*    }*/
+
+
+/*}*/
 @media screen and (max-width: 620px) {
     .grid-parent {
         grid-template-areas:

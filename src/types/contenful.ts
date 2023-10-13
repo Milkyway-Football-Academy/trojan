@@ -1,3 +1,6 @@
+import {Document } from '@contentful/rich-text-types'
+
+
 export interface MatchesEntry {
     opponents: string
     location: 'AWAY' | 'HOME'
@@ -18,14 +21,12 @@ export interface MatchesEntryResult {
 export interface NewsEntry {
     id: number;
     cover: Media;
-    newsBody: {
-        data: Record<string, any>;
-        content: Array<Record<string, any>>;
-        nodeType: string;
-    };
+    newsBody: Document;
     datePosted: string;
     newsHeading: string;
     subTitle: string;
+
+    slug: string
 }
 
 export interface FacilityEntry {
