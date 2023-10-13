@@ -32,7 +32,7 @@ const sampleContent = {
 };
 
 
- const Home: React.FC<HomepageProps> = ({matches, news, facilities}) => {
+ const Home: React.FC<HomepageProps> = ({matches, news}) => {
 
      return (
    <PageWrapper defaultTitle="Home" >
@@ -57,12 +57,10 @@ export const getStaticProps: GetStaticProps<HomepageProps> = async () => {
     try {
         const matchesEntry  = await client.getEntries<MatchesEntry>('matches');
         const newsEntry = await client.getEntries<NewsEntry>('news')
-        const facilitiesEntry = await client.getEntries<FacilityEntry>('facility')
         return {
             props: {
                 matches: matchesEntry,
                 news: newsEntry.slice(0,5),
-                facilities: facilitiesEntry
             }
         }
     } catch (error) {

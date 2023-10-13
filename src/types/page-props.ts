@@ -10,7 +10,6 @@ export interface PageProps {
 export interface HomepageProps {
     matches: MatchesEntry[]
     news: NewsEntry[]
-    facilities: FacilityEntry[]
 
 }
 
@@ -80,4 +79,14 @@ export interface NewsPageProps {
 export interface SingleNewsPageProps {
     news: NewsEntry
     allNews: NewsEntry[]
+}
+
+
+export interface MatchPageProps {
+    matches: MatchesEntry[]
+    upcomingMatch: MatchesEntry
+}
+
+export interface FacilityPageProps {
+    facilities: FacilityEntry[]
 }

@@ -91,7 +91,6 @@ export const getStaticProps: GetStaticProps<SingleStaffPageProps> = async (
             },
         };
     } catch (error) {
-        console.log(error)
         return {
             notFound: true
         }

@@ -17,7 +17,6 @@ export const MatchCard: React.FC<MatchesEntry>  =  (props) => {
     const date = mo.format('Do MMM YYYY')
     const time = mo.format('LT')
 
-    console.log(props.results)
     return (
         <div className="rounded-lg bg-white border border-[0.2px] border-app-primary h-[400px]">
                <div className={classnames("relative flex flex-row justify-between w-full items-center p-3 rounded-t-lg", {

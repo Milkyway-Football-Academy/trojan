@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const HeadCoachSection = () => {
     return (
         <section className="bg-gradient-to-b from-app-primary to-app-secondary text-white py-16">
@@ -10,9 +12,11 @@ export const HeadCoachSection = () => {
                         <p className=" font-Inter font-light text-xl mb-8">
                             We nurture young football talent to reach their full potential. Our state-of-the-art facilities, expert coaching staff, and dedication to excellence make us a leading academy in Kano, Nigeria.
                         </p>
-                        <a href="/about" className="bg-yellow-400 text-blue-900 hover:bg-yellow-500 rounded-full py-2 px-6 text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105">
-                            Learn More
-                        </a>
+                        <Link href="/information/about" >
+                            <div className="bg-yellow-400 max-w-[150px] text-center text-blue-900 hover:bg-yellow-500 rounded-full py-2 px-6 text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105">
+                                Learn More
+                            </div>
+                        </Link>
                     </div>
 
                     <div className="lg:w-1/2 mt-10 lg:mt-0">

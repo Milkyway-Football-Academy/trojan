@@ -36,6 +36,8 @@ export const FacilityItem: React.FC<{image: string, title: string}> = ({image, t
                     alt="Milkyway Football Academy"
                     src={image}
                     layout="fill"
+                    objectFit="cover"
+                    sizes="100vh"
                     className="absolute top-0 left-0 w-full h-full cover rounded-[10px]"
                 />
                 <div className="absolute top-0 left-0 w-full h-full rounded-[10px]">
