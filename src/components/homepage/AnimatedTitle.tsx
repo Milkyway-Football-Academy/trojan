@@ -16,7 +16,7 @@ export const AnimatedTitle: React.FC<TitleProps> = ({
     useEffect(() => {
         if (titleRef.current) {
             const containerWidth =
-                document.querySelector('cont')?.clientWidth || 0;
+                document.querySelector('body')?.clientWidth || 0;
 
             gsap.to(titleRef.current, {
                 x: containerWidth - titleRef.current.clientWidth,

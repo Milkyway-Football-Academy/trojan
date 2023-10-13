@@ -1,4 +1,13 @@
-import {FacilityEntry, MatchesEntry, NewsEntry, PlayerEntry, Media, ProgramEntry, StaffEntry} from "@/types/contenful";
+import {
+    FacilityEntry,
+    MatchesEntry,
+    NewsEntry,
+    PlayerEntry,
+    Media,
+    ProgramEntry,
+    StaffEntry,
+    PartnersEntry
+} from "@/types/contenful";
 import {Document } from '@contentful/rich-text-types'
 export interface PageProps {
     defaultTitle?: string
@@ -87,6 +96,13 @@ export interface MatchPageProps {
     upcomingMatch: MatchesEntry
 }
 
+
+
 export interface FacilityPageProps {
     facilities: FacilityEntry[]
+}
+
+
+export interface PartnersPageProps {
+    partners: PartnersEntry[]
 }

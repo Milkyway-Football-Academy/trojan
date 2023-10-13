@@ -24,7 +24,7 @@ export const PlayerPage: React.FC<PlayerPageProps> = ({player, players}) => {
                         <h1 className="text-2xl font-Inter font-light">{player.postion}</h1>
                     </div>
                 </div>
-                <div className="py-20 flex flex-col md:flex-row items-start md:space-x-16 container">
+                <div className="py-20 flex flex-col md:flex-row items-start md:space-x-16 spacy-y-5 md:space-y-0 container">
                     <div className="flex flex-col w-full  md:w-1/2">
                         <h1 className="text-app-primary text-5xl font-bold uppercase mb-10 underline">BIO</h1>
                         <div className="text-black font-Inter font-light leading-[2rem]">{player.biography}</div>

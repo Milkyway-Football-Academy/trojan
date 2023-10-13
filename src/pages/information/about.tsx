@@ -1,5 +1,5 @@
 import {AnimatedTitle} from "@/components/homepage/AnimatedTitle";
-import React from "react";
+import React, {PropsWithChildren} from "react";
 import {PageWrapper} from "@/components/layout/PageWrapper";
 import {FaArrowLeft} from "react-icons/fa";
 import {useRouter} from "next/router";
@@ -9,6 +9,14 @@ import {AboutPageProps,} from "@/types";
 import {ContentfulClient} from "@/lib/ContentfulClient";
 import {documentToReactComponents} from "@contentful/rich-text-react-renderer";
 import {ContentfulToUrl} from "../../../utils/contentfulToUrl";
+
+const Item: React.FC<PropsWithChildren> = ({children}) => {
+    return (
+        <div className="flex flex-row justify-center items-center py-3 border-gray-300 border-b-[1px] flex-col text-xl text-app-primary">
+            {children}
+        </div>
+    )
+}
 
 const AboutPage: React.FC<AboutPageProps> = (props) => {
     const router= useRouter()
@@ -29,6 +37,21 @@ const AboutPage: React.FC<AboutPageProps> = (props) => {
                             {documentToReactComponents(props.content)}
                         </div>
                     </div>
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                    <Item>
+                        <div className="text-2xl">Phone</div>
+                        <div className="text-gray-500">+234 803 082 6961</div>
+                    </Item>
+                    <Item>
+                        <div className="text-2xl">Address</div>
+                        <div className="text-gray-500">No. 5 St. Louis Avenue, Bompai, Kano</div>
+                    </Item>
+
+                    <Item>
+                        <div className="text-2xl">Email</div>
+                        <div className="text-gray-500">contact@milkywayfootballacademy.com</div>
+                    </Item>
                 </div>
             </section>
         </PageWrapper>

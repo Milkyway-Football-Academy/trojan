@@ -17,10 +17,10 @@ export const SocialSection = () => {
                        </div>
                         <div className="flex flex-row items-center space-x-3 mt-5">
                             <IconButton href="/">
-                                <Image src={TiktokIcon} alt="milkyway tiktok" width={40} height={40}  />
+                                <Image loading="eager" src={TiktokIcon} alt="milkyway tiktok" width={40} height={40}  />
                             </IconButton>
                             <IconButton href="/">
-                                <Image src={IgIcon} alt="milkyway tiktok" width={40} height={40}  />
+                                <Image loading={"eager"} src={IgIcon} alt="milkyway tiktok" width={40} height={40}  />
                             </IconButton>
                             <IconButton href="/">
                                 <Image src={YoutubeIcon} alt="milkyway tiktok" width={40} height={40}  />

@@ -21,7 +21,7 @@ const sampleContent = {
         title: "State-of-the-Art Facilities",
         subtext:
             "Our world-class training facilities are equipped with the latest technology and amenities to provide the best training environment for our players.",
-        href: "/facilities",
+        href: "/information/facilities",
     },
     players: {
         title: "Meet Our Players",

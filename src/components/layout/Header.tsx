@@ -69,6 +69,7 @@ export const Header: React.FC<{}> = () => {
                             <div className="flex justify-center">
                                 <Link href="/">
                                     <Image
+                                        loading={"eager"}
                                         className={logoClasses}
                                         width={50}
                                         height={50}

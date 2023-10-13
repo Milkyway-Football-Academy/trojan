@@ -12,7 +12,7 @@ interface HomepageFacilitiesProps {
 }
 export const HomepageFacilities: React.FC<HomepageFacilitiesProps> = ({data}) => {
     return (
-        <HomePageSection subtitle="World-class Facilities for your player to help them reach the next level " heading='Facilities' hasBtn={true} btnHref='/facility' sectionBackground="bg-app-accent">
+        <HomePageSection subtitle="World-class Facilities for your player to help them reach the next level " heading='Facilities'  sectionBackground="bg-app-accent">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
                 {data.map((item, index) => (
                     <FacilityItem key={index} image={ContentfulToUrl(item.image)} title={item.facilityName} />
@@ -38,6 +38,7 @@ export const FacilityItem: React.FC<{image: string, title: string}> = ({image, t
                     layout="fill"
                     objectFit="cover"
                     sizes="100vh"
+                    loading={"eager"}
                     className="absolute top-0 left-0 w-full h-full cover rounded-[10px]"
                 />
                 <div className="absolute top-0 left-0 w-full h-full rounded-[10px]">

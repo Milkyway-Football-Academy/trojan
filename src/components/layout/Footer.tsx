@@ -7,7 +7,7 @@ export const Footer = () => {
       <footer className="bg-black">
           <nav className="container py-20">
               <div className="flex flex-wrap items-center">
-                  <Image src={LOGO} alt="milkyway football academy" width={70} height={70}/>
+                  <Image loading={"eager"} src={LOGO} alt="milkyway football academy" width={70} height={70}/>
                   <div>
                       <ul className="flex items-center flex-wrap space-x-3">
                           <li>

@@ -88,3 +88,8 @@ export interface StaffEntry {
 
 
 
+export interface PartnersEntry {
+    name: string
+    description: string
+    image: Media
+}
