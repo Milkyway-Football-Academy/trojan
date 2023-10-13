@@ -5,24 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0396eb9f-397e-4963-9b05-3ee85cd377da" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/homepage/Partners.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/information/partners.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sitemap-0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/sitemap-0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/homepage/AnimatedTitle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homepage/AnimatedTitle.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homepage/ClubPattern.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homepage/ClubPattern.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homepage/Facilities.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homepage/Facilities.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homepage/SocialSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homepage/SocialSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Loader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Loader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/facilities.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/information/facilities.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/information/about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/information/about.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/people/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/people/[slug].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/players/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/players/[slug].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/contenful.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/contenful.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/page-props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/page-props.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +72,7 @@
       <workItem from="1696421626833" duration="16825000" />
       <workItem from="1696848208257" duration="27773000" />
       <workItem from="1697010836060" duration="17000" />
-      <workItem from="1697010875062" duration="51645000" />
+      <workItem from="1697010875062" duration="52090000" />
     </task>
     <task id="LOCAL-00001" summary="players + information">
       <created>1697152849091</created>
@@ -119,7 +102,28 @@
       <option name="project" value="LOCAL" />
       <updated>1697207739118</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="minor fixes">
+      <created>1697213255155</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697213255156</updated>
+    </task>
+    <task id="LOCAL-00006" summary="minor fixes">
+      <created>1697213335409</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1697213335410</updated>
+    </task>
+    <task id="LOCAL-00007" summary="minor fixes">
+      <created>1697213422667</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1697213422667</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,7 +135,8 @@
     <MESSAGE value="staff page" />
     <MESSAGE value="news page" />
     <MESSAGE value="matches page + facilities page" />
-    <option name="LAST_COMMIT_MESSAGE" value="matches page + facilities page" />
+    <MESSAGE value="minor fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
