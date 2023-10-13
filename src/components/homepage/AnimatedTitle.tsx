@@ -29,7 +29,10 @@ export const AnimatedTitle: React.FC<TitleProps> = ({
     }, []);
     return (
         <div className="flex w-full ">
-            <h1 ref={titleRef} className={classNames(className, 'whitespace-nowrap')}>
+            <h1 ref={titleRef} className={classNames(className, 'hidden md:block whitespace-nowrap')}>
+                {title}
+            </h1>
+            <h1 className={classNames(className, 'block md:hidden whitespace-nowrap')}>
                 {title}
             </h1>
         </div>
