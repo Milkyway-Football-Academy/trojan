@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0396eb9f-397e-4963-9b05-3ee85cd377da" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +75,7 @@
       <workItem from="1696421626833" duration="16825000" />
       <workItem from="1696848208257" duration="27773000" />
       <workItem from="1697010836060" duration="17000" />
-      <workItem from="1697010875062" duration="54073000" />
+      <workItem from="1697010875062" duration="54730000" />
     </task>
     <task id="LOCAL-00001" summary="players + information">
       <created>1697152849091</created>
@@ -138,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697216120348</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="minor fixes">
+      <created>1697222618228</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1697222618228</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

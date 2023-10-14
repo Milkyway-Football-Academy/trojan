@@ -12,6 +12,7 @@ import {useRouter} from "next/router";
 
 export const Header: React.FC<{}> = () => {
     const headerRef = useRef<HTMLElement | null>(null);
+    const mobileRef = useRef<HTMLDivElement | null>(null);
     const { yPosition } = useScrollPosition();
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -40,6 +41,24 @@ export const Header: React.FC<{}> = () => {
             "-translate-x-full": !isMobileMenuOpen,
         }
     );
+
+    useEffect(() => {
+        const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+
+        if (isMobileMenuOpen) {
+            gsap.fromTo(
+                mobileMenuOverlay,
+                {
+                    x: '100%',
+                },
+                {
+                    x: '0%', // Move to the left (fully visible)
+                    duration: 0.5, // Animation duration
+                    ease: 'back.in', // Easing function
+                }
+            );
+        }
+    }, [isMobileMenuOpen]);
 
     return (
         <>
@@ -90,7 +109,7 @@ export const Header: React.FC<{}> = () => {
                 </div>
             </header>
             {isMobileMenuOpen && (
-                <div className={mobileMenuClasses} >
+                <div className={mobileMenuClasses} ref={mobileRef}>
                     <div className="container h-full flex flex-col py-16 px-10 space-y-4">
                         <div className="flex mb-10 -py-10 flex-row justify-center w-full">
                             <Link href="/">
