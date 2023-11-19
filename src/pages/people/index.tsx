@@ -9,7 +9,7 @@ import {PeopleCard} from "@/components/people/PeopleCard";
 import {ContentfulToUrl} from "../../../utils/contentfulToUrl";
 
 
-const departments: Department[] = ['public relations', 'management', 'coaching', 'recruiting', 'engineering']
+const departments: Department[] = ['public relations', 'management', 'coaching', 'medical', 'engineering']
 const PeoplePage: React.FC<StaffPageProps> = (props) => {
     const ManagementStaff = useMemo<StaffEntry[]>(() => {
         return props.staffs.filter(staff => staff.department === 'management')
@@ -24,7 +24,7 @@ const PeoplePage: React.FC<StaffPageProps> = (props) => {
     }, [props.staffs])
 
     const RecruitingStaff = useMemo<StaffEntry[]>(() => {
-        return props.staffs.filter(staff => staff.department === 'recruiting')
+        return props.staffs.filter(staff => staff.department === 'medical')
     }, [props.staffs])
 
 

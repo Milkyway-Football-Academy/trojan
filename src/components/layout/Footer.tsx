@@ -14,13 +14,13 @@ export const Footer = () => {
                               <FooterLink href='/information' label="Club info" />
                           </li>
                           <li>
-                              <FooterLink href='/partners' label="partners" />
+                              <FooterLink href='/information/partners' label="partners" />
                           </li>
                           <li>
-                              <FooterLink href='/program' label="Academy program" />
+                              <FooterLink href='/information/programs' label="Academy programs" />
                           </li>
                           <li>
-                              <FooterLink href='/privacy' label="Privacy Policy" />
+                              <FooterLink href='/players' label="Players" />
                           </li>
                       </ul>
                   </div>

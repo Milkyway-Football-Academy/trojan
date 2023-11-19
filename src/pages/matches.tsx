@@ -11,12 +11,15 @@ import {MatchCard} from "@/components/matches/MatchCard";
 
 const MatchesPage: React.FC<MatchPageProps> = ({upcomingMatch, matches}) => {
     return (
-        <PageWrapper defaultTitle={`Milkyway vs ${upcomingMatch.opponents}`}>
+        <PageWrapper defaultTitle={`Milkyway vs ${upcomingMatch?.opponents}`}>
             <section className='bg-blue-50 mt-[50px] md:mt-[80px]'>
                 <div className="bg-app-primary py-20">
                     <AnimatedTitle title="Fixures & Tables"  className=" uppercase font-Inter text-white text-5xl md:text-[150px]" />
                 </div>
-                <UpcomingMatchCountdown match={upcomingMatch} />
+
+                {upcomingMatch && (
+                    <UpcomingMatchCountdown match={upcomingMatch} />
+                )}
 
                 <HomePageSection heading="All Matches">
                     <div className="flex flex-col w-full space-y-10 container px-3 md:px-10">
@@ -49,10 +52,11 @@ export const getStaticProps: GetStaticProps<MatchPageProps> = async () => {
         futureMatches.sort((a, b) => moment(a.timeAndDate).diff(moment(b.timeAndDate)));
 
         const nearestFutureMatch = futureMatches[0];
+
         return {
             props: {
                 matches,
-                upcomingMatch: nearestFutureMatch
+                upcomingMatch: nearestFutureMatch ?? null
             }
         }
     } catch (error) {

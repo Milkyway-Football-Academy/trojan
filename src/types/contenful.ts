@@ -69,7 +69,7 @@ export type Department =
     "engineering" |
     "management" |
     "public relations" |
-    "recruiting"
+    "medical"
 
 
 export interface StaffEntry {

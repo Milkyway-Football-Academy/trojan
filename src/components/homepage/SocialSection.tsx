@@ -33,7 +33,7 @@ export const SocialSection = () => {
                 </div>
                     <div className="flex flex-col md:flex-row w-full mt-10 space-y-5 md:space-y-0 md:mt-0">
                         <TikTokEmbed url="https://www.tiktok.com/@milkyway_footballacademy/video/7286576951303654662" width="100%" />
-                        <InstagramEmbed url="https://www.instagram.com/p/CUbHfhpswxt/" width="100%" />
+                        <InstagramEmbed url="https://www.instagram.com/reel/CzqUAozsQKx/" width="100%" />
                 </div>
             </div>
         </HomePageSection>

@@ -93,7 +93,7 @@ export interface SingleNewsPageProps {
 
 export interface MatchPageProps {
     matches: MatchesEntry[]
-    upcomingMatch: MatchesEntry
+    upcomingMatch: MatchesEntry | null
 }
 
 
